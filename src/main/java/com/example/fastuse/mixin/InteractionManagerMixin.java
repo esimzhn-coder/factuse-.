@@ -22,8 +22,6 @@ public abstract class InteractionManagerMixin {
     @Inject(method = "attackEntity", at = @At("TAIL"))
     private void fastuse$predictTntMinecartBreak(PlayerEntity player, Entity target, CallbackInfo ci) {
         if (!(target instanceof TntMinecartEntity cart)) return;
-        if (!player.getWorld().isClient()) return;
-
         // Прогнозируем уничтожение только если удар точно смертельный
         boolean lethal;
         if (player.isCreative()) {
