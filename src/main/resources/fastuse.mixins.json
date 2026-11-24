@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "com.example.fastuse.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["EntityRendererMixin", "InteractionManagerMixin", "PersistentProjectileMixin", "ParticleManagerMixin"],
+  "injectors": { "defaultRequire": 1 }
+}
